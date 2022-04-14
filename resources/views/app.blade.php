@@ -8,6 +8,7 @@
         :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
         x-data="{ mobileMenu: false }">
   <div id="app">
+    @include('layouts.partials.header')
 
     <main>
     @yield('main')
@@ -15,7 +16,6 @@
 
     @include('layouts.partials.footer')
 
-    <lead-form></lead-form>
 
   </div>
   @include('layouts.partials.js')
