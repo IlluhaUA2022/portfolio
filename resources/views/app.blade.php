@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
-    @include('layouts.partials.head')
-    @yield('head')
+      <link href="{{ mix('css/app.css')}}" rel="stylesheet">
   </head>
-  <body class="text-gray-800"
-        :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
-        x-data="{ mobileMenu: false }">
+  <body>
   <div id="app">
-    @include('layouts.partials.header')
+      <!-- navbar -->
+        @include('layouts.nav')
+        @include('layouts.first')
 
-    <main>
-    @yield('main')
-    </main>
+        @include('layouts.other')
 
-    @include('layouts.partials.footer')
-
+        @include('layouts.footer')
 
   </div>
-  @include('layouts.partials.js')
 
+  <script src="{{ mix('js/app.js') }}" defer></script>
   </body>
 </html>
