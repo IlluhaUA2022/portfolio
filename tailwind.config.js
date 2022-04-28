@@ -10,10 +10,11 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-            // colors: {
-            //     primary: '#4168BB',
-            //     secondary: '#FFC046',
-            // },
+            colors: {
+                brendcol: colors.yellow,
+                primary: '#4168BB',
+                secondary: '#FFC046',
+            },
             // animation: {
             //     'fade-in': 'fadeIn 3s linear infinite',
             // },
