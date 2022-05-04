@@ -20,13 +20,13 @@
             </div>
         </div>
         <div>
-            <div class="flex flex-col items-center text-gray-400 text-sm justify-center">
+            <div class="flex flex-row items-center text-gray-400 text-sm justify-center">
                 <a href="" class="pr-3">Careers</a>
                 <a href="" class="border-l border-gray-400 px-3">Privacy</a>
                 <a href="" class="border-l border-gray-400 pl-3">Terms & Conditions</a>
             </div>
             <div class="text-center text-white">
-                <p class="my-3 text-gray-400 text-sm pb-4">&copy; 2021 Class Technologies Inc. </p>
+                <p class="my-3 text-gray-400 text-sm pb-4">&copy; 2022 Class Technologies Inc. </p>
             </div>
         </div>
 

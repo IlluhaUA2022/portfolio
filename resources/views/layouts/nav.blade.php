@@ -1,26 +1,25 @@
-<div x-data="{ open: false }" class="w-full text-gray-700 bg-cream">
-    <div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
-        <div class="flex flex-row items-center justify-between py-6">
-            <div class="relative md:mt-8">
-                <a href="#" class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Skilline</a>
-                <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z" fill="#65DAFF"/>
+<div class="text-grey-400 bg-sky-700">
+    <div class="flex flex-row items-center max-w-screen-xl px-8 mx-auto text-white">
+        <div class="flex w-full md:w-auto justify-between py-6">
+            <div class="relative">
+                <h1 class="font-bold text-white text-lg pr-5 relative z-50">Skilline</h1>
+                <svg class="w-11 h-11 absolute -top-2 -left-3 z-40" viewBox="0 0 79 79" fill="none">
+                    <path d="M35.9645 2.94975C37.9171 0.997129 41.0829 0.997127 43.0355 2.94975L76.0502 35.9645C78.0029 37.9171 78.0029 41.0829 76.0503 43.0355L43.0355 76.0502C41.0829 78.0029 37.9171 78.0029 35.9645 76.0503L2.94975 43.0355C0.997129 41.0829 0.997127 37.9171 2.94975 35.9645L35.9645 2.94975Z" stroke="#26C1F2" stroke-width="3"/>
                 </svg>
             </div>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-8"  viewBox="0 0 24 24">
+                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/>
                 </svg>
             </button>
         </div>
-        <nav :class="{ 'transform md:transform-none': !open, 'h-full': open }" class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
-            <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Home</a>
-            <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Careers</a>
-            <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Blog</a>
-            <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">About Us</a>
-            <a class="px-10 py-3 mt-2 text-sm text-center bg-white text-gray-800 rounded-full md:mt-8 md:ml-4" href="#">Login</a>
-            <a class="px-10 py-3 mt-2 text-sm text-center bg-yellow-500 text-white rounded-full md:mt-8 md:ml-4" href="#">Sign Up</a>
+        <nav  class="h-0 hidden md:block md:transform-none md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300">
+            <a class="px-4 py-2 font-medium text-lg bg-transparent rounded-xl md:ml-4 hover:text-gray-300 focus:outline-none focus:shadow-outline" href="#">Home</a>
+            <a class="px-4 py-2 font-medium text-lg bg-transparent rounded-xl md:ml-4 hover:text-gray-300 focus:outline-none focus:shadow-outline" href="#">Careers</a>
+            <a class="px-4 py-2 font-medium text-lg bg-transparent rounded-xl md:ml-4 hover:text-gray-300 focus:outline-none focus:shadow-outline" href="#">Blog</a>
+            <a class="px-4 py-2 font-medium text-lg bg-transparent rounded-xl md:ml-4 hover:text-gray-300 focus:outline-none focus:shadow-outline" href="#">About Us</a>
+            <a class="px-10 py-3 font-medium text-lg text-center bg-white text-gray-600 rounded-full md:ml-4" href="#">Login</a>
+            <a class="px-10 py-3 font-medium text-lg text-center bg-yellow-500 text-gray-600 rounded-full md:ml-4" href="#">Sign Up</a>
         </nav>
     </div>
 </div>
